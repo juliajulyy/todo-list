@@ -3,12 +3,7 @@ import { RiCloseCircleLine } from 'react-icons/ri';
 import { TiEdit } from 'react-icons/ti';
 import TodoForm from './TodoForm';
 
-function Todo({ 
-  todos, 
-  completeTodo, 
-  removeTodo, 
-  updateTodo 
-}) {
+const Todo = ({ todos, completeTodo, removeTodo, updateTodo }) => {
   const [edit, setEdit] = useState({
     id: null,
     value: ''
@@ -53,4 +48,4 @@ function Todo({
   });
 }
 
-export default Todo
+export default Todo;
